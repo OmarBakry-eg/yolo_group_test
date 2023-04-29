@@ -1,7 +1,9 @@
-import 'package:casino_test/src/data/repository/characters_repository.dart';
-import 'package:casino_test/src/presentation/bloc/main_event.dart';
-import 'package:casino_test/src/presentation/bloc/main_state.dart';
+
+import 'package:casino_test/src/features/home/data/repository/characters_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'main_event.dart';
+import 'main_state.dart';
 
 class MainPageBloc
     extends Bloc<MainPageEvent, MainPageState> {

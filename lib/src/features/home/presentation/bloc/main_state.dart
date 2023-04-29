@@ -1,4 +1,4 @@
-import 'package:casino_test/src/data/models/character_model.dart';
+import 'package:casino_test/src/features/home/data/models/character_model.dart';
 import 'package:equatable/equatable.dart';
 
 abstract class MainPageState extends Equatable {}

@@ -2,9 +2,10 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:casino_test/src/data/models/character_model.dart';
-import 'package:casino_test/src/data/repository/characters_repository.dart';
 import 'package:http/http.dart';
+
+import '../models/character_model.dart';
+import 'characters_repository.dart';
 
 class CharactersRepositoryImpl implements CharactersRepository {
   final Client client;
