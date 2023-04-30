@@ -1,8 +1,8 @@
-import 'package:casino_test/src/features/home/data/models/character_model.dart';
+import 'package:casino_test/src/features/home/domain/entity/character_entity.dart';
 import 'package:flutter/material.dart';
 
 class CharacterWidget extends StatelessWidget {
-  final CharacterModel character;
+  final CharacterEntity character;
   const CharacterWidget({super.key,required this.character});
 
   @override

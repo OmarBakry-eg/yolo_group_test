@@ -18,8 +18,9 @@ dependencies:
   http: ^0.13.5
   json_annotation: ^4.8.0
   cupertino_icons: ^1.0.2
-  internet_connection_checker: ^1.0.0+1
-
+  internet_connection_checker: ^1.0.0+1 #For Internet connection check
+  dartz: ^0.10.1 #For Implement more optimizations in retruning values like Either Class
+  cached_network_image: ^3.2.3 #For Cache the network images
 dev_dependencies:
   flutter_test:
     sdk: flutter

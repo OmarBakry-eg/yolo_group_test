@@ -23,10 +23,6 @@ class ErrorState<T> extends Result<T> {
   final num? statusCode;
 }
 
-class ErrorStateWith401ResponseCode<T> extends Result<T> {
-  ErrorStateWith401ResponseCode(this.msg) : super._();
-  final T msg;
-}
 
 class SuccessState<T> extends Result<T> {
   SuccessState(this.value) : super._();

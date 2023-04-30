@@ -1,4 +1,4 @@
-import 'package:casino_test/src/features/home/data/models/character_model.dart';
+import 'package:casino_test/src/features/home/domain/entity/character_entity.dart';
 import 'package:equatable/equatable.dart';
 
 abstract class MainPageState extends Equatable {}
@@ -19,7 +19,7 @@ class UnSuccessfulMainPageState extends MainPageState {
 }
 
 class SuccessfulMainPageState extends MainPageState {
-  final List<CharacterModel> characters;
+  final List<CharacterEntity> characters;
 
   SuccessfulMainPageState(this.characters);
 
