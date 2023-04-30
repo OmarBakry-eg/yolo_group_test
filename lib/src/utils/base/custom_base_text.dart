@@ -7,7 +7,11 @@ class CustomBaseText extends StatelessWidget {
   final Color? color;
   const CustomBaseText({
     super.key,
-    required this.title, this.fontSize = 16, this.letterSpacing = 2.016, this.fontWeight = FontWeight.w700, this.color = MyColors.whiteColor,
+    required this.title,
+    this.fontSize = 16,
+    this.letterSpacing = 2.016,
+    this.fontWeight = FontWeight.w700,
+    this.color = MyColors.blackColor,
   });
 
   final String? title;
@@ -16,7 +20,7 @@ class CustomBaseText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title ?? "StackOverFlow Users",
-      style:  TextStyle(
+      style: TextStyle(
         fontSize: fontSize,
         fontWeight: fontWeight,
         color: color,
