@@ -21,7 +21,7 @@ dependencies:
   internet_connection_checker: ^1.0.0+1 #For Internet connection check
   dartz: ^0.10.1 #For Implement more optimizations in retruning values like Either Class
   cached_network_image: ^3.2.3 # For Cache the network images
-  intl: ^0.18.1
+  intl: ^0.18.1 #For formatting the dates
 
 dev_dependencies:
   flutter_test:
@@ -29,6 +29,8 @@ dev_dependencies:
   build_runner: ^2.3.3
   json_serializable: ^6.6.1
   flutter_lints: ^2.0.1
+  mocktail: ^0.3.0 #For networking unit tests
+  bloc_test: ^9.1.1 #For bloc unit tests
 
 flutter:
   uses-material-design: true

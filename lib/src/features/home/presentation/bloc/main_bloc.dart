@@ -94,4 +94,12 @@ class MainPageBloc extends Cubit<MainPageState> {
       return LoadingMainPageState();
     }
   }
+
+//? -----------------------------------------------------------------------
+//* Core Logic
+  @override
+  Future<void> close() {
+    scrollController.removeListener(() => scrollController.dispose());
+    return super.close();
+  }
 }
