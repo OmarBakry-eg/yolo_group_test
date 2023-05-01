@@ -3,6 +3,7 @@ import 'package:casino_test/src/features/home/presentation/bloc/main_state.dart'
 import 'package:casino_test/src/utils/base/custom_base_text.dart';
 import 'package:casino_test/src/utils/base/custom_loading_widget.dart';
 import 'package:casino_test/src/utils/ui/extension.dart';
+import 'package:casino_test/src/utils/ui/my_colors.dart';
 import 'package:flutter/material.dart';
 
 import 'character_widget.dart';
@@ -24,6 +25,7 @@ class CharacterListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RefreshIndicator(
+      color: MyColors.orangeColor,
       onRefresh: () async => await _bloc.onRefreshCalled(),
       child: ListView.builder(
         controller: _bloc.scrollController,

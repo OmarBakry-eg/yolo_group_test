@@ -1,17 +1,14 @@
-import 'package:casino_test/src/utils/ui/extension.dart';
 import 'package:casino_test/src/utils/ui/my_colors.dart';
 import 'package:flutter/material.dart';
 import 'custom_base_text.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  final bool hideAddButton, centerTitle, automaticallyImplyLeading, showTabbar;
+  final bool centerTitle, automaticallyImplyLeading;
   final String? title;
   const CustomAppBar(
       {Key? key,
       this.centerTitle = false,
-      this.hideAddButton = false,
       this.automaticallyImplyLeading = true,
-      this.showTabbar = false,
       this.title})
       : super(key: key);
 
@@ -22,33 +19,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       automaticallyImplyLeading: automaticallyImplyLeading,
       backgroundColor: MyColors.blackColor,
       title: CustomBaseText(title: title),
-      bottom: !showTabbar
-          ? null
-          : TabBar(
-              indicatorColor: MyColors.whiteColor,
-              tabs: [
-                const Tab(
-                  child: CustomBaseText(
-                    title: 'All',
-                    fontSize: 13,
-                  ),
-                ),
-                Tab(
-                  child: const CustomBaseText(
-                    title: 'New',
-                    fontSize: 13,
-                  ).addElementsInRow(context, const [
-                    SizedBox(
-                      width: 4,
-                    ),
-                    Icon(
-                      Icons.bookmark,
-                      color: MyColors.orangeColor,
-                    )
-                  ]),
-                ),
-              ],
-            ),
     );
   }
 

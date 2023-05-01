@@ -11,7 +11,7 @@ class CustomBaseText extends StatelessWidget {
     this.fontSize = 16,
     this.letterSpacing = 2.016,
     this.fontWeight = FontWeight.w700,
-    this.color = MyColors.blackColor,
+    this.color = MyColors.whiteColor,
   });
 
   final String? title;

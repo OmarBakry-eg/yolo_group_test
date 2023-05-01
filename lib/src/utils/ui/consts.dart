@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 mixin Constants {
   static final navigatorKey = GlobalKey<NavigatorState>();
+  static const String notFoundImg =
+      'https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png';
 
   static Future<void> showLoading(
       {String? title, String? description, Function? onPressed}) async {
@@ -15,18 +17,6 @@ mixin Constants {
   }
 
   static void hideLoadingOrNavBack() => navigatorKey.currentState!.pop();
-
-  static Future<void> navigateTo(Widget screen,
-          {bool pushReplacment = false,
-          bool pushAndRemoveUntil = false}) async =>
-      pushReplacment
-          ? await Navigator.pushReplacement(navigatorKey.currentContext!,
-              MaterialPageRoute(builder: (_) => screen))
-          : pushAndRemoveUntil
-              ? await Navigator.pushAndRemoveUntil(navigatorKey.currentContext!,
-                  MaterialPageRoute(builder: (_) => screen), (r) => false)
-              : await Navigator.push(navigatorKey.currentContext!,
-                  MaterialPageRoute(builder: (_) => screen));
 
   static Future<dynamic> showMessage(
           {String? title,

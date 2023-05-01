@@ -1,5 +1,4 @@
-
-
+import 'package:casino_test/src/utils/ui/my_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomLoadingWidget extends StatelessWidget {
@@ -17,7 +16,9 @@ class CustomLoadingWidget extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: const BorderRadius.all(Radius.circular(12)),
         ),
-        child: const CircularProgressIndicator(),
+        child: const CircularProgressIndicator(
+          valueColor: AlwaysStoppedAnimation(MyColors.orangeColor),
+        ),
       ),
     );
   }

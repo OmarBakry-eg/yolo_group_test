@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         BlocProvider.value(value: MainPageBloc(di.MainDIModule.sl()))
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         navigatorKey: Constants.navigatorKey,
         title: 'Test app',
         home: CharactersScreen(),
