@@ -36,10 +36,11 @@ Implement pagination ✅
 - You need to use same libraries, but you can also add more (reasonable amount) ✅
 ----------------------------------------------------------------
 ### New Plugins was added 👀
-  internet_connection_checker => For Internet connection check
-  dartz => For adding more optimizations and expanding return values types like Either Class
-  cached_network_image => For Cache the network images
-  intl => For formatting the dates
+
+- internet_connection_checker => For Internet connection check
+- dartz => For adding more optimizations and expanding return values types like Either Class
+- cached_network_image => For Cache the network images
+- intl => For formatting the dates
 ---------------------------------------------------------------- 
 - Simulate a failure case by turning off your internet connection and a success case by turning on your internet connection. ✅
 - Your code should compile without errors and app should run on both iOS and Android seamlessly ✅
