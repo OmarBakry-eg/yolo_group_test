@@ -29,7 +29,6 @@ class CharacterListWidget extends StatelessWidget {
       onRefresh: () async => await _bloc.onRefreshCalled(),
       child: ListView.builder(
         controller: _bloc.scrollController,
-        cacheExtent: double.infinity,
         itemCount: useSucessfulState
             ? sucessfulState!.hasReachedMax
                 ? sucessfulState!.characters.length
